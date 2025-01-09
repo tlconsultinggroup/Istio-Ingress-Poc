@@ -7,6 +7,8 @@ The Deploy external Istio Ingress gateway article describes how to configure an 
 * Install Istio add-on
 * Enable sidecar injection
 * Deploy sample application
+  ![image](https://github.com/user-attachments/assets/54a98082-2249-4cc8-8b0b-bf2e4d4101e9)
+
 
 #### 1. Set environment variables
 
