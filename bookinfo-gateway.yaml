@@ -1,0 +1,18 @@
+apiVersion: networking.istio.io/v1
+kind: Gateway
+metadata:
+  name: bookinfo-gateway
+  namespace: default
+spec:
+  selector:
+    istio: aks-istio-ingressgateway-external
+  servers:
+  - hosts:
+    - store.tlcaksmtlsdemo.io
+    port:
+      name: https
+      number: 443
+      protocol: HTTPS
+    tls:
+      credentialName: storepage-credential
+      mode: MUTUAL

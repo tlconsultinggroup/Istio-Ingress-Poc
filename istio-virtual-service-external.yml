@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: store-admin-vs-external
+spec:
+  hosts:
+  - "*"
+  gateways:
+  - store-admin-gateway-external
+  http:
+    route:
+    - destination:
+        host: store-admin
+        port:
+          number: 80

@@ -1,0 +1,16 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: store-vs-external
+  namespace: default
+spec:
+  gateways:
+  - bookinfo-gateway
+  hosts:
+  - store.tlcaksmtlsdemo.io
+  http:
+  - route:
+    - destination:
+        host: store-admin
+        port:
+          number: 80
