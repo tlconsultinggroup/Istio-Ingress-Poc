@@ -14,7 +14,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory # the ACME server production URL
-    email: tharinduvibuddha@gmail.com # email address used for ACME registration
+    email: tharindu.gangodagama@tlconsulting.com.au # email address used for ACME registration
     privateKeySecretRef: # name of a secret used to store the ACME account private key
       name: letsencrypt-prod
     solvers:
