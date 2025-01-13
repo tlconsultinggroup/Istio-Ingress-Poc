@@ -4,7 +4,7 @@ Please follow up below steps to integrate Istio-based service mesh add-on for AK
 
 ## Before you begin
 
-* [Install](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-addon#install-istio-add-on) Istio-based service mesh add-on on your cluster.
+* [Install](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-addon#install-istio-add-on) Istio-based service mesh add-on on AKS cluster.
 
 ```bash
 az aks mesh enable -g <rg-name> -n <cluster-name>
