@@ -58,8 +58,8 @@ reviews-v3-7bbb5b9cf7-7zw8n       2/2     Running   0          3h28m
 Before deploying the virtualservice and gateway resources, make sure to update the host name to match the previously created Azure DNS record name.
 
 ```bash
-kubectl apply -f gateway.yaml
-kubectl apply -f virtualservice.yaml
+kubectl apply -f istio-gateway.yaml
+kubectl apply -f istio-virtualservice.yaml
 ```
 
 ### Note
